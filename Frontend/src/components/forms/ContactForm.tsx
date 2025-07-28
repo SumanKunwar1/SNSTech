@@ -1,57 +1,89 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { Send, CheckCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-import { Card, CardContent } from '@/components/ui/card';
+"use client"
+
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
+import emailjs from "@emailjs/browser"
+import { Send, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Label } from "@/components/ui/label"
+import { Card, CardContent } from "@/components/ui/card"
 
 const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email address'),
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email address"),
   company: z.string().optional(),
-  service: z.string().min(1, 'Please select a service'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-});
+  service: z.string().min(1, "Please select a service"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+})
 
-type ContactFormData = z.infer<typeof contactSchema>;
+type ContactFormData = z.infer<typeof contactSchema>
 
 const services = [
-  'Website Development',
-  'Mobile App Development',
-  'Digital Marketing',
-  'Social Media Marketing',
-  'Branding & Design',
-  'Photography & Videography',
-  'Custom Solution',
-];
+  "Website Development",
+  "Mobile App Development",
+  "Digital Marketing",
+  "Social Media Marketing",
+  "Branding & Design",
+  "Photography & Videography",
+  "Custom Solution",
+]
 
 export function ContactForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     setValue,
-    watch,
     reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
-  });
+  })
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    console.log('Form submitted:', data);
-    setIsSubmitted(true);
-    reset();
-  };
+    try {
+      // Get current date and time
+      const now = new Date()
+      const submissionDate = now.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+      const submissionTime = now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+      })
+
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        company: data.company || "Not specified",
+        service: data.service,
+        subject: `Inquiry about ${data.service}`, // This will be the subject
+        message: data.message,
+        phone_number: "Not provided", // Since your form doesn't have phone field
+        submission_date: submissionDate,
+        submission_time: submissionTime,
+      }
+
+      await emailjs.send("service_ofbfmmm", "template_z9ctbcb", templateParams, "xl1r12P2zEsdpiIUR")
+
+      console.log("Form submitted:", data)
+      setIsSubmitted(true)
+      reset()
+    } catch (error) {
+      console.error("EmailJS Error:", error)
+      // You can add error handling here if needed
+    }
+  }
 
   if (isSubmitted) {
     return (
@@ -73,7 +105,7 @@ export function ContactForm() {
           </CardContent>
         </Card>
       </motion.div>
-    );
+    )
   }
 
   return (
@@ -89,13 +121,11 @@ export function ContactForm() {
           <Label htmlFor="name">Full Name *</Label>
           <Input
             id="name"
-            {...register('name')}
+            {...register("name")}
             placeholder="John Doe"
-            className={errors.name ? 'border-red-500' : ''}
+            className={errors.name ? "border-red-500" : ""}
           />
-          {errors.name && (
-            <p className="text-sm text-red-500">{errors.name.message}</p>
-          )}
+          {errors.name && <p className="text-sm text-red-500">{errors.name.message}</p>}
         </div>
 
         <div className="space-y-2">
@@ -103,30 +133,24 @@ export function ContactForm() {
           <Input
             id="email"
             type="email"
-            {...register('email')}
+            {...register("email")}
             placeholder="john@company.com"
-            className={errors.email ? 'border-red-500' : ''}
+            className={errors.email ? "border-red-500" : ""}
           />
-          {errors.email && (
-            <p className="text-sm text-red-500">{errors.email.message}</p>
-          )}
+          {errors.email && <p className="text-sm text-red-500">{errors.email.message}</p>}
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <Label htmlFor="company">Company (Optional)</Label>
-          <Input
-            id="company"
-            {...register('company')}
-            placeholder="Your Company Name"
-          />
+          <Input id="company" {...register("company")} placeholder="Your Company Name" />
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="service">Service Interested In *</Label>
-          <Select onValueChange={(value) => setValue('service', value)}>
-            <SelectTrigger className={errors.service ? 'border-red-500' : ''}>
+          <Select onValueChange={(value) => setValue("service", value)}>
+            <SelectTrigger className={errors.service ? "border-red-500" : ""}>
               <SelectValue placeholder="Select a service" />
             </SelectTrigger>
             <SelectContent>
@@ -137,9 +161,7 @@ export function ContactForm() {
               ))}
             </SelectContent>
           </Select>
-          {errors.service && (
-            <p className="text-sm text-red-500">{errors.service.message}</p>
-          )}
+          {errors.service && <p className="text-sm text-red-500">{errors.service.message}</p>}
         </div>
       </div>
 
@@ -147,14 +169,12 @@ export function ContactForm() {
         <Label htmlFor="message">Message *</Label>
         <Textarea
           id="message"
-          {...register('message')}
+          {...register("message")}
           placeholder="Tell us about your project and how we can help..."
           rows={5}
-          className={errors.message ? 'border-red-500' : ''}
+          className={errors.message ? "border-red-500" : ""}
         />
-        {errors.message && (
-          <p className="text-sm text-red-500">{errors.message.message}</p>
-        )}
+        {errors.message && <p className="text-sm text-red-500">{errors.message.message}</p>}
       </div>
 
       <Button
@@ -164,7 +184,7 @@ export function ContactForm() {
         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
       >
         {isSubmitting ? (
-          'Sending...'
+          "Sending..."
         ) : (
           <>
             Send Message
@@ -173,5 +193,5 @@ export function ContactForm() {
         )}
       </Button>
     </motion.form>
-  );
+  )
 }
