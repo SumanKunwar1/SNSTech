@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@snstech.co",
+    content: "info@wasmediamarketing.com",
     description: "Send us an email anytime",
     copyable: true,
   },
@@ -173,24 +173,16 @@ export function Contact() {
                       While we're remote-first, you can find our main hub on the map.
                     </p>
                   </div>
-                  <div className="relative flex-1 w-full rounded-b-xl overflow-hidden group">
-                    <img
-                      src="/placeholder.svg?height=400&width=800"
-                      alt="Map of San Francisco"
-                      width={800}
-                      height={400}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  <div className="h-[450px] w-full rounded-b-xl overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456446888249!2d85.3014833!3d27.680501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190054382911%3A0x97f42292c7b74db6!2sSammi%20%26%20Sounds%20Tech%20Co.!5e0!3m2!1sen!2snp!4v1717907677167"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <a
-                        href="https://www.google.com/maps/search/?api=1&query=San+Francisco%2C+CA"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-6 py-3 bg-teal-600 text-white font-semibold rounded-full shadow-lg hover:bg-teal-700 transition-colors duration-300"
-                      >
-                        <MapPin className="w-5 h-5 mr-2" /> View on Google Maps
-                      </a>
-                    </div>
                   </div>
                 </CardContent>
               </Card>

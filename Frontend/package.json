@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite --port 4100",
+  "build": "tsc -b && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^5.1.1",

@@ -230,7 +230,7 @@ export const Footer: React.FC = () => {
           {/* Bottom Footer */}
           <div className="border-t border-slate-700 mt-12 pt-8">
             <div className="flex flex-col items-center">
-              <p className="text-gray-400 text-sm">© {currentYear} Sammi and Sounds Tech Co. All rights reserved.</p>
+              <p className="text-gray-400 text-sm">© {currentYear} WAS Media Marketing. All rights reserved.</p>
             </div>
           </div>
         </div>
