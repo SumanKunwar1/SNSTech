@@ -27,9 +27,9 @@ const quickLinks: QuickLink[] = [
 ]
 
 const socialLinks: SocialLink[] = [
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/suman-kunwar-204286227/", icon: Linkedin },
-  { name: "Instagram", href: "https://www.instagram.com/snstech.co/", icon: Instagram },
-  { name: "Facebook", href: "https://www.facebook.com/SNSTechCo", icon: Facebook },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/105344642/admin/dashboard/", icon: Linkedin },
+  { name: "Instagram", href: "https://www.instagram.com/w.a.s._media_marketing/", icon: Instagram },
+  { name: "Facebook", href: "https://www.facebook.com/p/WAS-Media-Marketing-61567327714029/", icon: Facebook },
   { name: "Tiktok", href: "#", icon: Twitter },
 ]
 
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
                     <Zap className="w-5 h-5 text-white" />
                   </div>
                   <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    S&S Tech Co
+                    WAS Media Marketing
                   </span>
                 </Link>
               </div>
@@ -194,7 +194,7 @@ export const Footer: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex items-center text-gray-400">
                   <Mail className="h-5 w-5 mr-2 text-blue-500" />
-                  <span>info@snstech.co</span>
+                  <span>info@wasmediamarketing.com</span>
                 </li>
                 <li className="flex items-center text-gray-400">
                   <Phone className="h-5 w-5 mr-2 text-blue-500" />
@@ -202,7 +202,7 @@ export const Footer: React.FC = () => {
                 </li>
                 <li className="flex items-center text-gray-400">
                   <MapPin className="h-5 w-5 mr-2 text-blue-500" />
-                  <span>Sanepa, Lalitpur</span>
+                  <span>Chakrapath, Kathmandu</span>
                 </li>
               </ul>
 

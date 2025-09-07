@@ -41,7 +41,7 @@ export function WhyChooseUs() {
             viewport={{ once: true }}
             className="text-4xl sm:text-5xl font-bold mb-4"
           >
-            Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">S&S Tech Co</span>
+            Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">WAS Media Marketing</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

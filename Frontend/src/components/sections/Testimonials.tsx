@@ -9,7 +9,7 @@ const testimonials = [
     name: 'Sarah Chen',
     role: 'Marketing Director',
     company: 'TechFlow Innovations',
-    content: 'The team at S&S Tech Co brought our vision to life with incredible attention to detail. Their startup energy combined with professional execution exceeded our expectations.',
+    content: 'The team at WAS Media Marketing brought our vision to life with incredible attention to detail. Their startup energy combined with professional execution exceeded our expectations.',
     avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
     name: 'Michael Rodriguez',
     role: 'Founder & CEO',
     company: 'GreenSpace Solutions',
-    content: 'Working with S&S Tech Co was a game-changer for our business. They understood our startup mindset and delivered solutions that scale with our growth.',
+    content: 'Working with WAS Media Marketing was a game-changer for our business. They understood our startup mindset and delivered solutions that scale with our growth.',
     avatar: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=150',
   },
   {

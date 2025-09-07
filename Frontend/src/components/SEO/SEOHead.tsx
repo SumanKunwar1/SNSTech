@@ -87,9 +87,9 @@ export function SEOHead({
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Sammi and Sounds Tech Co",
-          "alternateName": "S&S Tech Co",
-          "url": "https://sammisounds.tech",
-          "logo": "https://sammisounds.tech/logo.png",
+          "alternateName": "WAS Media Marketing",
+          "url": "https://wasmediamarketing.com",
+          "logo": "https://wasmediamarketing.com/logo.png",
           "description": seoDescription,
           "foundingDate": "2025",
           "founders": [

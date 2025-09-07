@@ -31,7 +31,7 @@ export function About() {
     <div className="pt-8">
       <SEOHead 
         title="About Us"
-        description="Learn about Sammi and Sounds Tech Co - a mission-driven startup founded in 2025, committed to transforming the digital landscape through innovative technology solutions."
+        description="Learn about WAS Media Marketing - a mission-driven startup founded in 2025, committed to transforming the digital landscape through innovative technology solutions."
         keywords="about us, startup story, company mission, vision, values, technology innovation, digital transformation"
       />
       {/* Hero Section */}
@@ -73,7 +73,7 @@ export function About() {
               </h2>
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Sammi and Sounds Tech Co was founded in 2025 with a bold vision: to bridge the gap between 
+                  WAS Media Marketing was founded in 2024 with a bold vision: to bridge the gap between 
                   cutting-edge technology and meaningful business impact. What started as conversations between 
                   passionate technologists has evolved into a mission-driven startup.
                 </p>

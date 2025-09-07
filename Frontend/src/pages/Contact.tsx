@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    content: "+977 980-8245094",
+    content: "+977 9818123174",
     description: "Call us during business hours",
     copyable: true,
   },
@@ -175,7 +175,7 @@ export function Contact() {
                   </div>
                   <div className="h-[450px] w-full rounded-b-xl overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.456446888249!2d85.3014833!3d27.680501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190054382911%3A0x97f42292c7b74db6!2sSammi%20%26%20Sounds%20Tech%20Co.!5e0!3m2!1sen!2snp!4v1717907677167"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.1234567890!2d85.335774!3d27.7375928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190011545255%3A0xca8e5c9afa20eaeb!2sW.A.S.%20Media%20Marketing!5e0!3m2!1sen!2snp!4v1725710400000!5m2!1sen!2snp"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

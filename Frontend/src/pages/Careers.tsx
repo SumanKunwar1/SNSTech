@@ -70,7 +70,7 @@ export function Careers() {
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl font-bold mb-4"
             >
-              Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">S&S Tech Co</span>
+              Why <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">WAS Media Marketing</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -154,7 +154,7 @@ export function Careers() {
                         <Button 
                           size="lg" 
                           className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                          onClick={() => window.location.href = 'mailto:careers@sammisounds.tech?subject=Career Interest - S&S Tech Co'}
+                          onClick={() => window.location.href = 'mailto:careers@sammisounds.tech?subject=Career Interest - WAS Media Marketing'}
                         >
                           Send Your Info
                           <ArrowRight className="ml-2 w-5 h-5" />
