@@ -31,7 +31,7 @@ export function About() {
     <div className="pt-8">
       <SEOHead 
         title="About Us"
-        description="Learn about WAS Media Marketing - a mission-driven startup founded in 2025, committed to transforming the digital landscape through innovative technology solutions."
+        description="Learn about WAS Media Marketing - a mission-driven startup founded in 2024, committed to transforming the digital landscape through innovative technology solutions."
         keywords="about us, startup story, company mission, vision, values, technology innovation, digital transformation"
       />
       {/* Hero Section */}

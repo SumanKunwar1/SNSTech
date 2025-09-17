@@ -91,7 +91,7 @@ export function AboutPreview() {
                 </p>
                 <div className="flex space-x-4">
                   <div className="text-center">
-                    <div className="text-3xl font-bold">2025</div>
+                    <div className="text-3xl font-bold">2024</div>
                     <div className="text-sm text-blue-100">Founded</div>
                   </div>
                   <div className="text-center">

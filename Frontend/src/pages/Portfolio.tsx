@@ -91,19 +91,10 @@ export default function Portfolio() {
       gradient: "from-teal-500 to-cyan-500",
       link: "https://www.rootedinsound.com/"
     },
-    {
-      title: "Mastakala",
-      description: "Creative arts and cultural platform promoting local artists and cultural events.",
-      image: "https://static-01.daraz.com.np/other/shop/3738ba615000421e151abebf601cca83.png",
-      tags: ["Arts", "Culture", "Community"],
-      category: "Web Development",
-      gradient: "from-rose-500 to-pink-500",
-      link: "https://www.mastakala.com/"
-    }
+    
   ]
 
   const digitalMarketingClients = [
-    "Nepal Insurance Authority",
     "Khana Expo", 
     "Food, Beverage & Hospitality Expo",
     "Himalayan School of Outdoor Recreation (HSOR)",
@@ -111,23 +102,15 @@ export default function Portfolio() {
     "OMSounds Nepal",
     "House of Rajkarnicar",
     "Rooted in Sound",
-    "Mastakala",
-    "Lords Hotel",
+    "Hotel Mandala",
     "Socheko.com",
-    "Dharma Television"
+    "Dharma Television",
+    "Pureland Hospitality",
+    "Pureland Tours & Travels"
   ]
 
   const socialMediaClients = [
-    {
-      name: "Mastakala",
-      platforms: [
-        { type: "facebook", url: "https://www.facebook.com/mastakalanepal" },
-        { type: "instagram", url: "https://www.instagram.com/mastakalanepal/" },
     
-      ],
-      description: "Creative arts and cultural gifting online and corporate gifting platform",
-      image: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
     {
       name: "The Society Restaurant",
       platforms: [
@@ -155,15 +138,7 @@ export default function Portfolio() {
       description: "Educational content and school community engagement for their medical students",
       image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
-    {
-      name: "E-Mart",
-      platforms: [
-        { type: "facebook", url: "https://www.facebook.com/people/E-mart-Nepal/100093135937614/" },
-        { type: "instagram", url: "https://www.instagram.com/e_martnepal0?fbclid=IwY2xjawLvB6pleHRuA2FlbQIxMABicmlkETF5bHduRnRScHhPRUptbHNVAR7B2HqWEGndKkXBXCaQE39WRhQ6LLulSqzK1YrohWMpOld7ayai6r9sVAKBGA_aem_0UVgMbJqe37GSRC2ssR0NQ" }
-      ],
-      description: "Retail and e-commerce social media strategy",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
+   
     {
   name: "Dharma Television",
   platforms: [
@@ -178,11 +153,7 @@ export default function Portfolio() {
   ]
 
   const brandingProjects = [
-    {
-      name: "Mastakala",
-      description: "Complete brand identity for cultural arts platform",
-      image: "https://static-01.daraz.com.np/other/shop/3738ba615000421e151abebf601cca83.png"
-    },
+    
     {
       name: "Himalayan School of Outdoor Recreation (HSOR)",
       description: "Adventure education brand identity and visual system",
@@ -243,7 +214,7 @@ export default function Portfolio() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              At Sammi and Sounds Tech Co., we don't just create digital solutions—we craft experiences 
+              At WAS Media Marketing, we don't just create digital solutions—we craft experiences 
               that transform businesses and connect brands with their audiences in meaningful ways.
             </p>
             <div className="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
