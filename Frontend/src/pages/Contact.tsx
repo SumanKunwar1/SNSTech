@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@wasmediamarketing.com",
+    content: "info@wasmedia marketing.com",
     description: "Send us an email anytime",
     copyable: true,
   },
@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    content: "Sanepa, Lalitpur",
+    content: "Chakrapath, Kathmandu",
     description: "Remote-first, globally connected",
     link: "https://www.google.com/maps/search/?api=1&query=San+Francisco%2C+CA",
   },

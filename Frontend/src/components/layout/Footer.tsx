@@ -198,7 +198,7 @@ export const Footer: React.FC = () => {
                 </li>
                 <li className="flex items-center text-gray-400">
                   <Phone className="h-5 w-5 mr-2 text-blue-500" />
-                  <span>+977 980-8245094</span>
+                  <span>+977 981-8123174</span>
                 </li>
                 <li className="flex items-center text-gray-400">
                   <MapPin className="h-5 w-5 mr-2 text-blue-500" />
