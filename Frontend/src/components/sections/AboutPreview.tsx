@@ -28,7 +28,7 @@ export function AboutPreview() {
               className="text-lg text-muted-foreground mb-8 leading-relaxed"
             >
               Born from a vision to bridge the gap between cutting-edge technology and meaningful business impact, 
-              Sammi and Sounds Tech Co represents the next generation of digital innovation. We're not just another 
+              WAS Media Marketing represents the next generation of digital innovation. We're not just another 
               agency—we're your partners in transformation.
             </motion.p>
 

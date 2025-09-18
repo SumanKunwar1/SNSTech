@@ -13,13 +13,13 @@ interface SEOHeadProps {
 }
 
 const defaultSEO = {
-  title: 'Sammi and Sounds Tech Co - Empowering Brands. Engineering Futures.',
+  title: 'WAS Media Marketing - Empowering Brands. Engineering Futures.',
   description: 'Leading startup software company specializing in website development, mobile apps, digital marketing, social media marketing, branding & design, and professional photography & videography services.',
   keywords: 'web development, mobile app development, digital marketing, social media marketing, branding, design, photography, videography, startup, software company, San Francisco',
   image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  url: 'https://sammisounds.tech',
+  url: 'https://wasmediamarketing.com',
   type: 'website',
-  author: 'Sammi and Sounds Tech Co',
+  author: 'WAS Media marketing',
 };
 
 export function SEOHead({
@@ -33,7 +33,7 @@ export function SEOHead({
   publishedTime,
   modifiedTime,
 }: SEOHeadProps) {
-  const seoTitle = title ? `${title} | Sammi and Sounds Tech Co` : defaultSEO.title;
+  const seoTitle = title ? `${title} | WAS Media Marketing` : defaultSEO.title;
   const seoDescription = description || defaultSEO.description;
   const seoKeywords = keywords || defaultSEO.keywords;
   const seoImage = image || defaultSEO.image;
@@ -59,7 +59,7 @@ export function SEOHead({
       <meta property="og:image" content={seoImage} />
       <meta property="og:url" content={seoUrl} />
       <meta property="og:type" content={type} />
-      <meta property="og:site_name" content="Sammi and Sounds Tech Co" />
+      <meta property="og:site_name" content="WAS Media Marketing" />
       <meta property="og:locale" content="en_US" />
       
       {/* Twitter Card Meta Tags */}
@@ -67,8 +67,8 @@ export function SEOHead({
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:description" content={seoDescription} />
       <meta name="twitter:image" content={seoImage} />
-      <meta name="twitter:site" content="@sammisoundstech" />
-      <meta name="twitter:creator" content="@sammisoundstech" />
+      <meta name="twitter:site" content="@wasmediamarketing" />
+      <meta name="twitter:creator" content="@wasmediamarketing" />
 
       {/* Additional Meta Tags */}
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
@@ -86,7 +86,7 @@ export function SEOHead({
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Sammi and Sounds Tech Co",
+          "name": "was media marketing",
           "alternateName": "WAS Media Marketing",
           "url": "https://wasmediamarketing.com",
           "logo": "https://wasmediamarketing.com/logo.png",
@@ -95,7 +95,7 @@ export function SEOHead({
           "founders": [
             {
               "@type": "Person",
-              "name": "Sammi and Sounds Tech Co Founders"
+              "name": "WAS Media Marketing Founders"
             }
           ],
           "address": {
@@ -106,15 +106,15 @@ export function SEOHead({
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+1-555-123-4567",
+            "telephone": "+977 9818123174",
             "contactType": "customer service",
-            "email": "hello@sammisounds.tech"
+            "email": "info@wasmediamarketing.com"
           },
           "sameAs": [
-            "https://linkedin.com/company/sammisoundstech",
-            "https://instagram.com/sammisoundstech",
-            "https://facebook.com/sammisoundstech",
-            "https://twitter.com/sammisoundstech"
+            "https://linkedin.com/company/wasmediamarketing",
+            "https://instagram.com/wasmediamarketing",
+            "https://facebook.com/wasmediamarketing",
+            "https://twitter.com/wasmediamarketing"
           ],
           "services": [
             "Website Development",
