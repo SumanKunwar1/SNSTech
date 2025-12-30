@@ -18,6 +18,24 @@ export default function Portfolio() {
   gradient: "from-yellow-500 to-amber-600",
   link: "https://purelandhospitality.com.np/"
 },
+{
+  title: "RASS Engineering & Construction",
+  description: "To deliver world-class engineering and construction solutions that exceed client expectations while maintaining the highest standards of safety, quality, and environmental responsibility. We strive to be the most trusted partner for specialized construction services in Nepal.",
+  image: "https://res.cloudinary.com/dihev9qxc/image/upload/v1765871303/RASS-logo_grqryq.png",
+  tags: ["Engineering", "Construction", "Luxury", "Spritual"],
+  category: "Web Development",
+  gradient: "from-yellow-500 to-amber-600",
+  link: "https://rassengineering.com.np/"
+},
+{
+  title: "Constellation saving & credit cooperative ltd",
+  description: "To deliver world-class engineering and construction solutions that exceed client expectations while maintaining the highest standards of safety, quality, and environmental responsibility. We strive to be the most trusted partner for specialized construction services in Nepal.",
+  image: "https://res.cloudinary.com/dihev9qxc/image/upload/v1765871303/RASS-logo_grqryq.png",
+  tags: ["Engineering", "Construction", "Luxury", "Spritual"],
+  category: "Web Development",
+  gradient: "from-yellow-500 to-amber-600",
+  link: "https://rassengineering.com.np/"
+},
 
     {
       title: "Nepal Insurance Authority",
