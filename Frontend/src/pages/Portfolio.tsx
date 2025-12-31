@@ -20,7 +20,7 @@ export default function Portfolio() {
 },
 {
   title: "RASS Engineering & Construction",
-  description: "To deliver world-class engineering and construction solutions that exceed client expectations while maintaining the highest standards of safety, quality, and environmental responsibility. We strive to be the most trusted partner for specialized construction services in Nepal.",
+  description: "Delivering world-class engineering and construction solutions with a strong commitment to safety, quality, and trust across Nepal.",
   image: "https://res.cloudinary.com/dihev9qxc/image/upload/v1765871303/RASS-logo_grqryq.png",
   tags: ["Engineering", "Construction", "Luxury", "Spritual"],
   category: "Web Development",
@@ -29,7 +29,7 @@ export default function Portfolio() {
 },
 {
   title: "Constellation saving & credit cooperative ltd",
-  description: "Founded on internationally recognized cooperative values and democratic principles, Constellation Saving & Credit Cooperative works to unite member resources to foster economic, social, and cultural growth. Built by experienced professionals in the cooperative sector, the organization continues to expand through transparent leadership, institutional development, and a commitment to supporting its members and partners for sustainable progress.",
+  description: "Constellation Saving & Credit Cooperative promotes sustainable growth by uniting member resources through transparent, democratic leadership.",
   image: "https://res.cloudinary.com/dihev9qxc/image/upload/v1767095082/unnamed_yvnvnq.png",
   tags: ["cooperative", "business-directory", "shareholder ", "finance"],
   category: "Web Development",
