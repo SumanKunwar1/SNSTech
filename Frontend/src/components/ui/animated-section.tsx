@@ -11,8 +11,8 @@ interface AnimatedSectionProps {
 export default function AnimatedSection({ children, className = '', delay = 0 }: AnimatedSectionProps) {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
-    rootMargin: '-50px 0px'
+    threshold: 0,
+    rootMargin: '0px 0px -10% 0px'
   })
 
   return (
